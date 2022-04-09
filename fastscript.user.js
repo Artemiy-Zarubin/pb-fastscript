@@ -3,6 +3,9 @@
 // @version      1.0
 // @description  Script-assistant for Pixel Battle.
 // @author       Artemiy Zarubin
+// @downloadURL  https://raw.githubusercontent.com/ArtemiyGeneralov/pb-fastscript/main/fastscript.user.js
+// @updateURL    https://raw.githubusercontent.com/ArtemiyGeneralov/pb-fastscript/main/fastscript.user.js
+// @supportURL   https://vk.com/id382847201
 // @match        https://mmosg.ru/game.php?*
 // @icon         https://mmosg.ru/assets/hd_icon_world.png
 // ==/UserScript==
