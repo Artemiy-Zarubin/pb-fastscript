@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PB FastScript
-// @version      1.0
+// @version      1
 // @description  Script-assistant for Pixel Battle.
 // @author       Artemiy Zarubin
 // @downloadURL  https://raw.githubusercontent.com/ArtemiyGeneralov/pb-fastscript/main/fastscript.user.js
