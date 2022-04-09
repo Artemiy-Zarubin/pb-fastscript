@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PB FastScript
-// @version      1.3
+// @version      1.4
 // @description  Script-assistant for Pixel Battle.
 // @author       Artemiy Zarubin
 // @downloadURL  https://raw.githubusercontent.com/ArtemiyGeneralov/pb-fastscript/main/fastscript.user.js
@@ -44,9 +44,11 @@ function fastCaptchaClick() {
 function showCaptchaBeforeCollect() {
     let goldButton = document.getElementsByClassName('goldButton')[0].text,
         time = goldButton.split(':'),
-        captches = document.getElementsByClassName('captchaContainer')[0];
-    if(goldButton && time && captches) {
+        captches = document.getElementsByClassName('captchaContainer')[0],
+        captchawaiting = document.getElementsByClassName('captchaWaitingContainer')[0];
+    if(goldButton && time && captches && captchawaiting) {
         if(Number(time[0]) > 0 || Number(time[1]) > 0 || Number(time[2]) > 5) return;
+        captchawaiting.parentNode.removeChild(captchawaiting);
         captches.style = 'display:block;';
         captches.classList.remove('captchaContainer');
     }
