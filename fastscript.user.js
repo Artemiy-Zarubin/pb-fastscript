@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PB FastScript
-// @version      1.1
+// @version      1.2
 // @description  Script-assistant for Pixel Battle.
 // @author       Artemiy Zarubin
 // @downloadURL  https://raw.githubusercontent.com/ArtemiyGeneralov/pb-fastscript/main/fastscript.user.js
@@ -54,7 +54,11 @@ function showCaptchaBeforeCollect() {
 setTimeout(() => { setInterval(showCaptchaBeforeCollect, 500) },1000);
 
 function showCountPaints() {
-    let element = document.getElementsByClassName('paintPerHour')[0];
+    let element = document.getElementsByClassName('paintPerHour')[0],
+        countPaints = document.getElementsByTagName('p')[15];
+    if(countPaints && Number(countPaints.text) > 1000) {
+        countPaints.text = '1000';
+    }
     if(element && element.style.display !== 'block') {
         element.style.display = 'block';
     }
