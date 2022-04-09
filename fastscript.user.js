@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         PB KittyScript
+// @name         PB FastScript
 // @version      1.0
 // @description  Script-assistant for Pixel Battle.
 // @author       Artemiy Zarubin
